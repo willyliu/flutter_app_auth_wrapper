@@ -27,8 +27,8 @@ class AuthEndpoint {
   String token;
 
   AuthEndpoint({
-    @required this.auth,
-    @required this.token,
+    required this.auth,
+    required this.token,
   });
 }
 
