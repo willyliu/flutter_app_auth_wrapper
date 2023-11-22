@@ -46,20 +46,20 @@ class AuthConfig {
   String state;
   String prompt;
 
-  String color;
+  String? color;
 
   Map<String, String> customParameters;
 
   AuthConfig({
-    @required this.clientId,
-    @required this.clientSecret,
-    @required this.redirectUrl,
-    @required this.endpoint,
+    required this.clientId,
+    required this.clientSecret,
+    required this.redirectUrl,
+    required this.endpoint,
     this.type = AuthType.CODE,
     this.state = "login",
     this.scopes = const <String>[],
     this.customParameters = const {},
-    this.prompt,
+    this.prompt = '',
     this.color,
   });
 
